@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { 
   Droplets, 
@@ -18,14 +19,18 @@ interface FaucetViewProps {
   lang: Language;
   onAddToast: (msg: string, type?: 'success' | 'error') => void;
   onBack?: () => void;
+  onCloseTour?: () => void;
 }
 
-const FaucetView: React.FC<FaucetViewProps> = ({ lang, onAddToast, onBack }) => {
+const FaucetView: React.FC<FaucetViewProps> = ({ lang, onAddToast, onBack, onCloseTour }) => {
   const [isClaiming, setIsClaiming] = useState(false);
   const [lastClaimTime, setLastClaimTime] = useState<Date | null>(null);
   const t = TRANSLATIONS[lang].faucet;
 
   const handleClaim = () => {
+    // 立即标记第3步完成，衔接后续回到主页后的引导
+    if (onCloseTour) onCloseTour();
+    
     setIsClaiming(true);
     // Simulate network request
     setTimeout(() => {
@@ -111,6 +116,7 @@ const FaucetView: React.FC<FaucetViewProps> = ({ lang, onAddToast, onBack }) => 
           <div className="w-full relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-200"></div>
             <button 
+              id="tour-claim-btn"
               onClick={handleClaim}
               disabled={isClaiming || !!lastClaimTime}
               className={`relative w-full py-4 rounded-2xl font-black text-lg text-white shadow-xl transition-all flex items-center justify-center gap-3 ${

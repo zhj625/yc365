@@ -13,11 +13,46 @@ import {
 
 export const TRANSLATIONS = {
   en: {
+    tour: {
+      next: "Next",
+      skip: "Skip",
+      finish: "Got it",
+      step1: {
+        title: "Welcome to YC365",
+        content: "Please connect your wallet first to start predicting global events and earning rewards!"
+      },
+      step2: {
+        title: "Claim Test Tokens",
+        content: "You need test tokens to start predicting. Click the Faucet to get free test USDT and BNB!"
+      },
+      step3: {
+        title: "Get Your Tokens",
+        content: "Click this button to mint 50 Test USDT. You'll need these to place your first prediction!"
+      },
+      step4: {
+        title: "Start Predicting",
+        content: "Pick an event you are interested in and click 'Buy Yes' or 'Buy No' to start your first prediction!"
+      },
+      step5: {
+        title: "Place Your Prediction",
+        content: "Use this panel to select 'Yes' or 'No', enter the amount of shares, and place your order!"
+      },
+      step6: {
+        title: "Check the Rules",
+        content: "Make sure to read the market rules carefully to understand how the event will be settled."
+      },
+      step7: {
+        title: "Create Your Own Event",
+        content: "Have a great idea for a prediction? Click here to create your own market and earn fees from trades!"
+      }
+    },
     header: {
       searchPlaceholder: "Search markets...",
       faucet: "Faucet",
       totalBalance: "Total Balance",
       deposit: "Deposit",
+      connect: "Connect Wallet",
+      recharge: "Top up",
       profile: {
         disconnect: "Disconnect",
         points: "Points",
@@ -30,7 +65,7 @@ export const TRANSLATIONS = {
         myEvents: "My Events",
         myPositions: "My Positions",
         myWatchlist: "My Watchlist",
-        tour: "Guided Tour",
+        featureTour: "Feature Tour",
         themeTitle: "Theme",
         toggleTheme: "Toggle Theme",
         langTitle: "Language",
@@ -41,6 +76,10 @@ export const TRANSLATIONS = {
         balance: "Total Balance",
         deposit: "Deposit"
       }
+    },
+    auth: {
+      pleaseLogin: "Please log in first",
+      connectBtn: "Connect Wallet"
     },
     filter: {
       more: "More",
@@ -141,11 +180,46 @@ export const TRANSLATIONS = {
     }
   },
   zh: {
+    tour: {
+      next: "下一步",
+      skip: "跳过",
+      finish: "我知道了",
+      step1: {
+        title: "欢迎来到 YC365",
+        content: "在开始预测全球事件并赚取收益之前，请先连接您的钱包！"
+      },
+      step2: {
+        title: "领取测试币",
+        content: "您需要测试代币才能开始预测。点击“水龙头”即可免费领取测试 USDT 和 BNB！"
+      },
+      step3: {
+        title: "获取您的代币",
+        content: "点击此按钮铸造 50 个测试 USDT。您需要这些代币来进行第一次预测！"
+      },
+      step4: {
+        title: "开始预测",
+        content: "挑选一个您感兴趣的事件，点击“买入 是”或“买入 否”即可开始您的第一次预测！"
+      },
+      step5: {
+        title: "立即下单",
+        content: "在此面板选择“是”或“否”，输入交易数量并点击下单，即可完成您的预测！"
+      },
+      step6: {
+        title: "关注规则",
+        content: "在下单前，请务必仔细阅读市场规则，了解事件最终是如何结算的。"
+      },
+      step7: {
+        title: "创建您自己的事件",
+        content: "如果您有精彩的预测想法，可以点击这里自主创建预测市场，并从交易中赚取手续费！"
+      }
+    },
     header: {
       searchPlaceholder: "搜索预测市场...",
       faucet: "水龙头",
       totalBalance: "总余额",
       deposit: "充值",
+      connect: "连接钱包",
+      recharge: "充值",
       profile: {
         disconnect: "断开连接",
         points: "积分",
@@ -158,7 +232,7 @@ export const TRANSLATIONS = {
         myEvents: "我的事件",
         myPositions: "我的持仓",
         myWatchlist: "我的收藏",
-        tour: "功能引导",
+        featureTour: "功能引导",
         themeTitle: "主题",
         toggleTheme: "切换主题",
         langTitle: "语言",
@@ -169,6 +243,10 @@ export const TRANSLATIONS = {
         balance: "总余额",
         deposit: "充值"
       }
+    },
+    auth: {
+      pleaseLogin: "请先登录",
+      connectBtn: "连接钱包"
     },
     filter: {
       more: "更多",

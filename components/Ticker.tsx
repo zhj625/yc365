@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Market, Language } from '../types';
 import { MARKETS_DATA } from '../constants';
@@ -32,7 +31,6 @@ const Ticker: React.FC<TickerProps> = ({ lang, onMarketClick }) => {
   return (
     <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
       <div 
-        id="trending-ticker"
         className="relative flex items-center bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow h-14 ring-1 ring-slate-900/5 dark:ring-white/5"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

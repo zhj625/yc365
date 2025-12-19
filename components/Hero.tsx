@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Sparkles, ChevronLeft, ChevronRight, Gift, Zap, Globe2, BrainCircuit } from 'lucide-react';
 import { Language } from '../types';
@@ -146,7 +145,7 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + activeSlides.length) % activeSlides.length);
 
   return (
-    <div id="hero-banner" className="relative w-full rounded-3xl overflow-hidden shadow-2xl shadow-indigo-900/20 dark:shadow-black/50 my-6 group h-[200px] md:h-[260px] ring-1 ring-black/5 dark:ring-white/10 bg-slate-900">
+    <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl shadow-indigo-900/20 dark:shadow-black/50 my-6 group h-[200px] md:h-[260px] ring-1 ring-black/5 dark:ring-white/10 bg-slate-900">
       
       {/* Slides */}
       {activeSlides.map((slide, index) => (

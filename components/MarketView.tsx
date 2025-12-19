@@ -174,7 +174,7 @@ const MarketView: React.FC<MarketViewProps> = ({ market, lang, onBack, onAddToas
             </div>
 
           {/* COMBINED CHART & ORDER BOOK SECTION (TABBED) */}
-          <div id="market-orderbook-section" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm overflow-hidden flex flex-col min-h-[400px]">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm overflow-hidden flex flex-col min-h-[400px]">
              
              {/* Tabs Header */}
              <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800">
@@ -294,7 +294,7 @@ const MarketView: React.FC<MarketViewProps> = ({ market, lang, onBack, onAddToas
           </div>
 
           {/* RULES SECTION (Expandable) */}
-          <div id="market-rules-section" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 overflow-hidden">
+          <div id="tour-market-rules" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 overflow-hidden">
              <button 
                 onClick={() => setIsRulesExpanded(!isRulesExpanded)}
                 className="w-full flex items-center justify-between px-6 py-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
@@ -315,7 +315,7 @@ const MarketView: React.FC<MarketViewProps> = ({ market, lang, onBack, onAddToas
           </div>
 
           {/* COMMENTS SECTION (Full Width) */}
-          <div id="market-comments-section" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col">
              <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
                 <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                    <MessageSquare className="w-4 h-4 text-purple-500" /> {tDetail.comments} ({market.commentCount})
@@ -374,7 +374,7 @@ const MarketView: React.FC<MarketViewProps> = ({ market, lang, onBack, onAddToas
         {/* RIGHT COLUMN: Trading Panel (Sticky) */}
         <div className="lg:col-span-4">
            <div className="sticky top-24 space-y-4">
-              <div id="order-panel-container" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-black/50 overflow-hidden">
+              <div id="tour-trade-panel" className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-black/50 overflow-hidden">
                  
                  {/* Buy / Sell Tabs */}
                  <div className="flex border-b border-slate-100 dark:border-slate-800">

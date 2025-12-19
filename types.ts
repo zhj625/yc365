@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export type Language = 'en' | 'zh';
@@ -28,4 +29,10 @@ export interface Category {
 export interface FilterTag {
   id: string;
   label: string;
+}
+
+export interface TourStep {
+  targetId: string;
+  title: string;
+  content: string;
 }
